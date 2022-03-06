@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon.png" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-  We are launching soon!
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
-  Subscribe and get notified
+    <!-- css -->
+    <link rel="stylesheet" href="main.css" />
 
-  Notify Me
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
 
-  &copy; Copyright Ping. All rights reserved.
+  <body>
+    <header>
+      <img src="src/img/logo.svg" alt="PING. logo" class="logo" />
+    </header>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <main>
+      <h1 class="title">We are launching <span>soon!</span></h1>
+      <h2 class="subtitle">Subscribe and get notified</h2>
+
+      <section class="notify">
+        <input type="text" name="email" class="notify__email" placeholder="Your email address…" />
+        <button class="notify__button">Notify Me</button>
+      </section>
+
+      <img src="src/img/illustration-dashboard.png" alt="dashboard-preview" class="preview" />
+    </main>
+
+    <footer>
+      <section class="social">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </section>
+
+      <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
