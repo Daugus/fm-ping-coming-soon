@@ -1,0 +1,23 @@
+{
+  "name": "ping-coming-soon-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daugus/fm-ping-coming-soon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daugus/fm-ping-coming-soon/issues"
+  },
+  "homepage": "https://github.com/Daugus/fm-ping-coming-soon#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.9"
+  }
+}
