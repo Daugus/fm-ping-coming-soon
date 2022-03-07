@@ -2,7 +2,6 @@
 
 main {
   margin-block: 0.6rem;
-  overflow: hidden;
 }
 
 .title {
@@ -32,6 +31,7 @@ main {
   &__container {
     display: flex;
     justify-content: space-between;
+    gap: 0.25rem;
   }
 
   &__email,
@@ -62,7 +62,7 @@ main {
     background: $clr-primary-dark;
     color: white;
     font-weight: 600;
-    box-shadow: 0 5px 25px hsla(hue($clr-primary-dark), saturation($clr-primary-dark), saturation($clr-primary-dark), 0.5);
+    box-shadow: 0 8px 15px hsla(hue($clr-primary-dark), saturation($clr-primary-dark), saturation($clr-primary-dark), 1);
   }
 
   &__mensaje p {
@@ -81,7 +81,7 @@ main {
 }
 
 .preview {
-  margin-top: 5.5rem;
+  margin-top: 4.4rem;
 }
 
 @keyframes fadeIn {
