@@ -83,6 +83,7 @@ main {
   color: white;
   font-weight: 600;
   box-shadow: 0 8px 15px #c1d1fb;
+  cursor: pointer;
 }
 .notify__mensaje p {
   color: #ff5263;
@@ -130,6 +131,11 @@ footer {
   display: inline-flex;
   justify-content: center;
   place-items: center;
+  transition: all 150ms ease;
+}
+.social i:hover {
+  color: white;
+  background-color: #4f7df3;
 }
 
 .copyright {

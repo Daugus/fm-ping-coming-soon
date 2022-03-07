@@ -26,6 +26,14 @@ footer {
     display: inline-flex;
     justify-content: center;
     place-items: center;
+
+    transition: all 150ms ease;
+
+    &:hover {
+      color: white;
+      background-color: $clr-primary-dark;
+      // border-color: $clr-primary-dark;
+    }
   }
 }
 

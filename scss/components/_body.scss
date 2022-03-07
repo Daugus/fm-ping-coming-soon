@@ -63,6 +63,7 @@ main {
     color: white;
     font-weight: 600;
     box-shadow: 0 8px 15px hsla(hue($clr-primary-dark), saturation($clr-primary-dark), saturation($clr-primary-dark), 1);
+    cursor: pointer;
   }
 
   &__mensaje p {
