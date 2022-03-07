@@ -67,7 +67,6 @@ main {
 .notify {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 .notify__container {
   display: flex;
@@ -110,12 +109,18 @@ main {
   box-shadow: 0 8px 15px #c1d1fb;
   cursor: pointer;
 }
+.notify__mensaje {
+  display: flex;
+  height: fit-content;
+  width: 100%;
+}
 .notify__mensaje p {
+  width: 100%;
   color: #ff5263;
   font-size: 1rem;
   font-style: italic;
-  text-align: left;
   margin-left: 1.8rem;
+  text-align: left;
 }
 .notify__mensaje p.error::after {
   position: absolute;

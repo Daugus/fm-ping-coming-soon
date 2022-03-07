@@ -3,6 +3,7 @@
 
 footer {
   margin-block: 3.5rem 2.5rem;
+
   @media (max-width: $vp-width) {
     margin-top: 5rem;
   }
@@ -35,7 +36,6 @@ footer {
     &:hover {
       color: white;
       background-color: $clr-primary-dark;
-      // border-color: $clr-primary-dark;
     }
   }
 }

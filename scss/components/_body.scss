@@ -34,7 +34,6 @@ main {
   $animation-timing: 200ms;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 
   &__container {
     display: flex;
@@ -53,6 +52,7 @@ main {
     border: 1px solid;
     font-size: 1rem;
     padding: 1.1rem 3.9rem;
+
     @media (max-width: $vp-width) {
       padding-block: 0.9rem;
     }
@@ -81,17 +81,24 @@ main {
     cursor: pointer;
   }
 
-  &__mensaje p {
-    color: $clr-secondary;
-    font-size: 1rem;
-    font-style: italic;
-    text-align: left;
-    margin-left: 1.8rem;
+  &__mensaje {
+    display: flex;
+    height: fit-content;
+    width: 100%;
 
-    &.error::after {
-      position: absolute;
-      animation: fadeIn $animation-timing;
-      content: 'Please provide a valid email address';
+    p {
+      width: 100%;
+      color: $clr-secondary;
+      font-size: 1rem;
+      font-style: italic;
+      margin-left: 1.8rem;
+      text-align: left;
+
+      &.error::after {
+        position: absolute;
+        animation: fadeIn $animation-timing;
+        content: 'Please provide a valid email address';
+      }
     }
   }
 }
