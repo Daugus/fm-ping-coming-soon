@@ -82,7 +82,8 @@ main {
   font-weight: 600;
   box-shadow: 0 5px 25px rgba(193, 209, 251, 0.5);
 }
-.notify__mensaje p {
+.notify__mensaje p::after {
+  content: "Please provide a valid email address";
   color: #ff5263;
   font-size: 1rem;
   font-style: italic;

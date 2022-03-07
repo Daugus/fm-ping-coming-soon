@@ -24,6 +24,7 @@ main {
 }
 
 .notify {
+  $animation-timing: 200ms;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -44,11 +45,14 @@ main {
   &__email {
     color: $clr-neutral-light;
     border-color: $clr-primary-light;
+    outline: none;
     padding-left: 1.8em;
     flex-grow: 1;
     margin-right: 0.75rem;
 
-    &:invalid {
+    transition: border-color $animation-timing ease;
+
+    &.invalid {
       border-color: $clr-secondary;
     }
   }
@@ -67,9 +71,25 @@ main {
     font-style: italic;
     text-align: left;
     margin-left: 1.8rem;
+
+    &.error::after {
+      position: absolute;
+      animation: fadeIn $animation-timing;
+      content: 'Please provide a valid email address';
+    }
   }
 }
 
 .preview {
   margin-top: 5.5rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

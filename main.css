@@ -68,11 +68,13 @@ main {
 .notify__email {
   color: #969696;
   border-color: #c2d3ff;
+  outline: none;
   padding-left: 1.8em;
   flex-grow: 1;
   margin-right: 0.75rem;
+  transition: border-color 200ms ease;
 }
-.notify__email:invalid {
+.notify__email.invalid {
   border-color: #ff5263;
 }
 .notify__button {
@@ -89,11 +91,24 @@ main {
   text-align: left;
   margin-left: 1.8rem;
 }
+.notify__mensaje p.error::after {
+  position: absolute;
+  animation: fadeIn 200ms;
+  content: "Please provide a valid email address";
+}
 
 .preview {
   margin-top: 5.5rem;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 footer {
   margin-block: 3.4rem 2.5rem;
 }
