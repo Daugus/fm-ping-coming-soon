@@ -14,12 +14,20 @@ main {
     color: black;
     font-weight: 700;
   }
+
+  @media (max-width: $vp-width) {
+    font-size: 1.5rem;
+  }
 }
 
 .subtitle {
   font-weight: inherit;
-  font-size: inherit;
+  font-size: 1.25rem;
   margin-bottom: 2.5rem;
+
+  @media (max-width: $vp-width) {
+    font-size: 0.85rem;
+  }
 }
 
 .notify {
@@ -31,7 +39,12 @@ main {
   &__container {
     display: flex;
     justify-content: space-between;
-    gap: 0.25rem;
+    gap: 1rem;
+
+    @media (max-width: $vp-width) {
+      flex-direction: column;
+      gap: 1rem;
+    }
   }
 
   &__email,
@@ -40,6 +53,9 @@ main {
     border: 1px solid;
     font-size: 1rem;
     padding: 1.1rem 3.9rem;
+    @media (max-width: $vp-width) {
+      padding-block: 0.9rem;
+    }
   }
 
   &__email {
@@ -48,7 +64,6 @@ main {
     outline: none;
     padding-left: 1.8em;
     flex-grow: 1;
-    margin-right: 0.75rem;
 
     transition: border-color $animation-timing ease;
 

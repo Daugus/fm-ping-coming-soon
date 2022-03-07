@@ -1,4 +1,4 @@
-@use 'colors' as c;
+@use 'variables' as *;
 
 *,
 *::before,
@@ -24,6 +24,10 @@ body {
 
   & > * {
     max-width: 44.5vw;
+
+    @media (max-width: $vp-width) {
+      max-width: 85vw;
+    }
   }
 }
 
