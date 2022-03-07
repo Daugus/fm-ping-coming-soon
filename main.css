@@ -167,6 +167,7 @@ footer {
   justify-content: center;
   place-items: center;
   transition: all 150ms ease;
+  cursor: pointer;
 }
 .social i:hover {
   color: white;

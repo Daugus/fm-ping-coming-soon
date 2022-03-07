@@ -33,6 +33,8 @@ footer {
 
     transition: all 150ms ease;
 
+    cursor: pointer;
+
     &:hover {
       color: white;
       background-color: $clr-primary-dark;
