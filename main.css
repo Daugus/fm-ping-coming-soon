@@ -78,3 +78,29 @@ main {
 .preview {
   margin-top: 5.5rem;
 }
+
+footer {
+  margin-block: 3.4rem 2.5rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.social i {
+  font-size: 1rem;
+  color: #4f7df3;
+  border: 1px solid #c2d3ff;
+  border-radius: 50%;
+  width: 2.125rem;
+  height: 2.125rem;
+  line-height: 2.125rem;
+}
+
+.copyright {
+  color: #969696;
+  font-size: 1rem;
+}

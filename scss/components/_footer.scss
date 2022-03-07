@@ -1,0 +1,33 @@
+@use 'sass:math';
+@use '../abstract' as *;
+
+footer {
+  margin-block: 3.4rem 2.5rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+
+  margin-bottom: 2rem;
+
+  i {
+    $fz: 1rem;
+    font-size: $fz;
+    color: $clr-primary-dark;
+    border: 1px solid $clr-primary-light;
+    border-radius: 50%;
+
+    $side: 2.125rem;
+    width: $side;
+    height: $side;
+    line-height: $side;
+  }
+}
+
+.copyright {
+  color: $clr-neutral-light;
+  font-size: 1rem;
+}
