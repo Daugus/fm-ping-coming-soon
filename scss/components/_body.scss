@@ -25,7 +25,13 @@ main {
 
 .notify {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__email,
   &__button {
@@ -41,6 +47,10 @@ main {
     padding-left: 1.8em;
     flex-grow: 1;
     margin-right: 0.75rem;
+
+    &:invalid {
+      border-color: $clr-secondary;
+    }
   }
 
   &__button {
@@ -49,6 +59,14 @@ main {
     color: white;
     font-weight: 600;
     box-shadow: 0 5px 25px hsla(hue($clr-primary-dark), saturation($clr-primary-dark), saturation($clr-primary-dark), 0.5);
+  }
+
+  &__mensaje p {
+    color: $clr-secondary;
+    font-size: 1rem;
+    font-style: italic;
+    text-align: left;
+    margin-left: 1.8rem;
   }
 }
 

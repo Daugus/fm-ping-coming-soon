@@ -52,6 +52,11 @@ main {
 
 .notify {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.notify__container {
+  display: flex;
   justify-content: space-between;
 }
 .notify__email, .notify__button {
@@ -67,12 +72,22 @@ main {
   flex-grow: 1;
   margin-right: 0.75rem;
 }
+.notify__email:invalid {
+  border-color: #ff5263;
+}
 .notify__button {
   border-color: #4f7df3;
   background: #4f7df3;
   color: white;
   font-weight: 600;
   box-shadow: 0 5px 25px rgba(193, 209, 251, 0.5);
+}
+.notify__mensaje p {
+  color: #ff5263;
+  font-size: 1rem;
+  font-style: italic;
+  text-align: left;
+  margin-left: 1.8rem;
 }
 
 .preview {
